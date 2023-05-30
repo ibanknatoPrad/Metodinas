@@ -1,17 +1,12 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/assets/favicon.17e50649.svg" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>SIGNfy</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-  <script type="module" crossorigin src="/assets/main.07f434a5.js"></script>
-  <link rel="modulepreload" href="/assets/dynamic-import-polyfill.b3685604.js">
-  <link rel="modulepreload" href="/assets/vendor.862a424b.js">
-  <link rel="stylesheet" href="/assets/main.17435556.css">
-</head>
+  </head>
   <body class="h-100 text-center text-bg-dark">
 
     <header>
@@ -27,7 +22,7 @@
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./about">About</a>
+                <a class="nav-link" href="./about/about.html">About</a>
               </li>
             </ul>
           </div>
@@ -58,18 +53,18 @@
       <div id="chatOption">
         <button id="webcamButton" class="btn btn-outline-primary">Start webcam</button>
         <!-- <h2>2. Create a new Call</h2> -->
-        <button id="callButton" class="btn btn-outline-success" disabled>Create Call (offer)</button>
+        <button id="callButton" class="btn btn-outline-success">Create Call (offer)</button>
     
         <!-- <h2>3. Join a Call</h2> -->
         <br>
         <p>Answer the call from a different browser window or device</p>
         
         <input id="callInput" />
-        <button id="answerButton" class="btn btn-outline-success" disabled>Answer</button>
+        <button id="answerButton" class="btn btn-outline-success">Answer</button>
     
         <!-- <h2>4. Hangup</h2> -->
     
-        <button id="hangupButton" class="btn btn-outline-danger" disabled>Hangup</button>
+        <button id="hangupButton" class="btn btn-outline-danger">Hangup</button>
         
       </div>
     </main>
@@ -78,7 +73,7 @@
       <p>Made with <a href="https://getbootstrap.com/" class="text-white">Bootstrap</a>, by Group 8.</p>
     </footer>
   
-    
+    <script type="module" src="/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
     <script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
